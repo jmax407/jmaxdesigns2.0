@@ -1,14 +1,13 @@
 import React from 'react';
 import Nav from './components/Nav';
+import About from './components/About';
 
 function App() {
   return (
     <>
     <Nav></Nav>
-    <main>
-      <h1>Hello world</h1>
-      <button className="btn btn-primary">here</button>
-    </main>
+    <About></About>
+    
     </>
   );
 }
