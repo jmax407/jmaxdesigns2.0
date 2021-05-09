@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function ProjectList({ category }) {
+function ProjectList({  }) {
 
     const [projects] = useState([
         {
@@ -20,8 +20,9 @@ function ProjectList({ category }) {
 
     ])
     return(
-        <div className="col-md-6">
+            <>
             {projects.map((project, i) => (
+                <div className="col-md-6">
             <div className="project-container">
                 <div className="project-details">
                     <ul className="list-unstyled project-list">
@@ -32,8 +33,10 @@ function ProjectList({ category }) {
                 </div>
                 <img src={require(`../../assets/images/${project.image}`).default} alt={project.name} key={project.name} className="img-thumbnail" />
             </div>
+            </div>
             ))} 
-        </div>
+            </>
+        
     )
 }
 

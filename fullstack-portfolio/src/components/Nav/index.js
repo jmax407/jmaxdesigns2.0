@@ -1,4 +1,5 @@
 import React from 'react';
+import {Route, BrowserRouter as Router, Link} from 'react-router-dom';
 
 
 function Nav(props) {
@@ -27,16 +28,20 @@ function Nav(props) {
                     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul className="navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className={`nav-link ${!isAbout && 'active'}`} href="#about" onClick={() => setIsAbout(true)}>About</a>
+                                <Link className='nav-link' to="/">About</Link>
+                                
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link ${!isPortfolio && 'active'}`} href="#portfolio" onClick={() => setIsPortfolio(true)}>Portfolio</a>
+                                <Link className='nav-link' to="/portfolio">Portfolio</Link>
+                                
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link ${!isContact && 'active'}`} href="#contact" onClick={() => setIsContact(true)}>Contact</a>
+                                <Link className='nav-link' to="/contact">Contact</Link>
+                                
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link ${!isResume && 'active'}`} href="#resume" onClick={() => setIsResume(true)}>Resume</a>
+                                <Link className='nav-link' to="/resume">Resume</Link>
+                                
                             </li>
                         </ul>
                     </div>

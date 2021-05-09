@@ -18,43 +18,16 @@ function About() {
                 </div>
             </div>
         </div>
-        <div className="container">
+        <div className="container mt-5 mb-5">
             <div className="row justify-content-center">
                 <div className="col-xxl-10 col-xl-12">
-                    <div className="section">
-                        <h2 className="title">Education</h2>
-                        <div className="event-item">
-                            <h3>Valencia College</h3>
-                            <h4>2008-2010</h4>
-                            <ul className="event-details">
-                                <li>AS Degree in Graphic Technology for Print Design</li>
-                                <li>AS Degree in Graphic Technology for Web Design</li>
-                            </ul>
-                        </div>
+                    <div className="section mt-5 mb-5">
+                        <p>Good morning. In less than an hour, aircraft from here will join others from around the world. And you will be launching the largest aerial battle in this history of mankind. Mankind -- that word should have new meaning for all of us today. We can't be consumed by our petty differences anymore. We will be united in our common interests. Perhaps its fate that today is the 4th of July, and you will once again be fighting for our freedom, not from tyranny, oppression, or persecution -- but from annihilation. We're fighting for our right to live, to exist. And should we win the day, the 4th of July will no longer be known as an American holiday, but as the day when the world declared in one voice:</p>
+                        <p>
+                        "We will not go quietly into the night! We will not vanish without a fight! We're going to live on! We're going to survive!" Today, we celebrate our Independence Day!
+                        </p>
+                    </div>
 
-                        <div className="event-item">
-                            <h3>Coding Bootcamp</h3>
-                            <h4>2021</h4>
-                            <ul className="event-details">
-                                <li>Fullstack Web Development</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="section">
-                        <h2 className="title">Employment History</h2>
-                        <div className="event-item">
-                            <h3>Marriott Vacation Club</h3>
-                            <h4>Digital Designer 20-18-Current</h4>
-                            <ul className="event-details">
-                                <li>
-                                    <p>As a part of the team my responsibilities included email design, mini
-                                        websites and landing pages, all within the Brand Standards. Also I was the
-                                        lead designer for redesign of the Marriott Vacations Worldwide website.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
