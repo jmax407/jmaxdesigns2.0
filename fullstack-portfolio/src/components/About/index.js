@@ -12,8 +12,7 @@ function About() {
                             <h1>Hi I'm Julius, a Web Designer &amp; Fullstack Developer out of Orlando, FL.</h1>
                             <h2>I always enjoyed art &amp; computers then I was able to translate that into a
                                 career. Learn more <a href="">about me</a> below or please, take a look at my <a
-                                    href="">portfolio</a> &amp; <a href="">resume</a>. <a href="#">Contact me</a>
-                                 with any questions or concerns.</h2>
+                                    href="">portfolio</a> &amp; <a href="">resume</a>. <a href="#">Contact me</a> with any questions or concerns.</h2>
                         </div>
                     </div>
                 </div>

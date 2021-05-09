@@ -1,8 +1,19 @@
 import React from 'react';
 
 
-function Nav() {
+function Nav(props) {
     
+    const {
+        isAbout,
+        setIsAbout,
+        isPortfolio,
+        setIsPortfolio,
+        isContact,
+        setIsContact,
+        isResume,
+        setIsResume
+    } = props;
+
     return (
         <header>
             <nav className="navbar fixed-top navbar-expand-lg">
@@ -16,16 +27,16 @@ function Nav() {
                     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul className="navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#about">About</a>
+                                <a className={`nav-link ${!isAbout && 'active'}`} href="#about" onClick={() => setIsAbout(true)}>About</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#portfolio">Portfolio</a>
+                                <a className={`nav-link ${!isPortfolio && 'active'}`} href="#portfolio" onClick={() => setIsPortfolio(true)}>Portfolio</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#contact">Contact</a>
+                                <a className={`nav-link ${!isContact && 'active'}`} href="#contact" onClick={() => setIsContact(true)}>Contact</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#resume">Resume</a>
+                                <a className={`nav-link ${!isResume && 'active'}`} href="#resume" onClick={() => setIsResume(true)}>Resume</a>
                             </li>
                         </ul>
                     </div>
