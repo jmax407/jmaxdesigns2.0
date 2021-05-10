@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {validateEmail } from '../../utils/helpers';
 
 function Contact() {
+  let errMsg = document.querySelector('#errMsg');
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   const [errorMessage, setErrorMessage] = useState('');
@@ -18,14 +19,17 @@ function Contact() {
     if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
+      errMsg.classList.remove('hide');
         setErrorMessage('Your email is invalid.');
       } else {
         setErrorMessage('');
       }
     } else {
       if (!e.target.value.length) {
+        errMsg.classList.remove('hide');
         setErrorMessage(`${e.target.name} is required.`);
       } else {
+        errMsg.classList.add('hide');
         setErrorMessage('');
       }
     }
@@ -44,8 +48,8 @@ function Contact() {
                             <div className="hero-content">
                             <h1>Let's Get in Touch</h1>
                             <h2>Have a question, comment, concern, or plain just want to chat it up with me?
-                                Feel free to drop a message below. Or Connect with me through <a href="https://github.com/jmax407" target="_blank"><i
-                                        className="fab fa-github-alt"></i> Github</a>, <a href="https://www.linkedin.com/in/julius-maxwell-13a7691b/" target="_blank"><i
+                                Feel free to drop a message below. Or Connect with me through <a href="https://github.com/jmax407" target="_blank" rel="noreferrer"><i
+                                        className="fab fa-github-alt"></i> Github</a>, <a href="https://www.linkedin.com/in/julius-maxwell-13a7691b/" target="_blank" rel="noreferrer"><i
                                         className="fab fa-linkedin-in"></i> LinkedIn</a>, or <a
                                     href="mailto:jmax407@gmail.com"><i
                                         className="fas fa-envelope-open-text"></i> email</a>.</h2>
@@ -70,7 +74,7 @@ function Contact() {
                                         <label htmlFor="message">Message:</label>
                                         <textarea className="form-control" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
                                     </div>
-                                    <div className="mb-3">
+                                    <div id="errMsg" className="mb-3 hide">
                                         <div className="alert alert-danger" role="alert">
                                             <p className="error-text">{errorMessage}</p>
                                         </div>

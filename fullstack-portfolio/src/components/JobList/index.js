@@ -39,10 +39,10 @@ function JobList() {
         <>
             {jobs.map((job, i) => (
                 
-            <div className="event-item"  key={job.name} >
-                <h3>{job.name}</h3>
+            <div className="event-item mb-5"  key={job.company} >
+                <h3>{job.company}</h3>
                 <h4>{job.role} {job.dates}</h4>
-                <ul className="event-details">
+                <ul className="event-details list-unstyled">
                     <li><p>{job.description}</p></li>
                 </ul>
             </div>
