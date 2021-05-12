@@ -10,7 +10,7 @@ function Resume() {
                     <div className="intro">
                         <div className="hero-content">
                             <h1>Resume</h1>
-                            <h2>As a FrontEnd Developer I have 10+ years experience working in the industry. I'm well versed in various industry standards and am always looking to expand my knowledge base.</h2>
+                            <h2>As a FrontEnd Developer I have 10+ years experience working in the industry. I'm well versed in various industry standards and am always looking to expand my knowledge base. <a href="http://jmaxdesigns.com/images/onlineResume.pdf" target="_blank" rel="noreferrer">Download my resume here.</a></h2>
                         </div>
                     </div>
                 </div>

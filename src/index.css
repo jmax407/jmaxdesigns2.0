@@ -36,6 +36,11 @@ a {
   text-decoration: none;
   border-bottom: 1px solid var(--imperial-red);
 }
+a:hover  {
+  color: var(--celadon-blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--celadon-blue);
+}
 /* --------navigation------- */
 nav.navbar {
   padding: 2rem 0;
@@ -152,4 +157,15 @@ h2.title {
 }
 #errMsg.hide{
   display: none;
+}
+
+/* -------- footer -----------*/
+.footer {
+  border-top: 1px solid var(--celadon-blue);
+  margin-top: 100px;
+  padding-top: 25px;
+
+}
+.footer li {
+  padding: 0 20px;
 }
